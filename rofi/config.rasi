@@ -1,16 +1,13 @@
-configuration{
-    modi: "run,window,combi";
-    icon-theme: "Oranchelo";
+configuration {
+    modes: "window,run,ssh,drun";
+    sorting-method: "normal";
     show-icons: true;
-    terminal: "alacritty";
-    drun-display-format: "{icon} {name}";
-    location: 0;
-    disable-history: false;
-    hide-scrollbar: true;
-    display-combi: " 🖥️  All ";
-    display-run: " 🏃  Run ";
-    display-window: " 🪟  Window";
-    sidebar-mode: true;
+    matching: "regex";
+    drun-match-fields: "name";
+    display-run: "menu:";
+    display-ssh: "ssh:";
+    display-drun: "apps:";
+    display-window: "windows:";
 }
 
-@theme "catppuccin-mocha"
+@theme "tokyo"
